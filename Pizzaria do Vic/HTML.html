@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="CSS.css"/>
+    <title>PIZZARIA DO VIC</title>
+</head>
+
+<body class="body">
+    <div class="home">
+        <div class="top-bar">
+            <a class="top-barcontent" href="#home">HOME</a>
+            <a class="top-barcontent" href="#about">ABOUT</a>
+            <a class="top-barcontent" href="#menu">MENU</a>
+            <a class="top-barcontent" href="#contact">CONTACT</a>
+        </div>
+        <div class="titulo">
+            <h2>THIN</h2>
+            <h2>CRUST PIZZA</h2>
+            <a href="#menu">LET ME SEE THE MENU</a>
+        </div>
+        <div class="opening">
+            <h1>OPEN FROM 10AM TO 12PM</h1>
+        </div>
+    </div>
+    <div class="themenu" id="menu">
+        <h1>THE MENU</h1>
+        <img id="gatoMenu" class="gatoMenu" src="img/pusheenPizza.gif">
+        <div class="menuselector">
+            <button onclick="changeToPizzaMenu()" id="botaoMenuPizza" class="menubotoesPizza">PIZZA</button>
+            <button onclick="changeToSaladsMenu()" id="botaoMenuSalads" class="menubotoes">SALADS</button>
+            <button onclick="changeToStarterMenu()" id="botaoMenuStarter" class="menubotoes">STARTER</button>
+        </div>
+        <div class="pizzaMenu" id="pizzaMenu">
+            <table class="tablemenu">
+                <tr>
+                    <td class="nomecomida">MARGUERITA</td>
+                    <td rowspan="2"><span class="precos">R$12,50</span></td>
+                </tr>
+                <tr>
+                    <td class="descricaocomida">FRESH TOMATOES, FRESH MOZZARELLA, FRESH BASIL</td>
+                </tr>
+                <tr>
+                    <td class="nomecomida">FORMAGIO</td>
+                    <td rowspan="2"><span class="precos">R$15,50</span></td>
+                </tr>
+                <tr>
+                    <td class="descricaocomida">FOUR CHEESES (MOZZARELLA, PARMESAN, PECORINO, JARSLBER</td>
+                </tr>
+                <tr>
+                    <td class="nomecomida">CHICKEN</td>
+                    <td rowspan="2"><span class="precos">R$17,00</span></td>
+                </tr>
+                <tr>
+                    <td class="descricaocomida">FRESH TOMATOES, MOZZARELLA, CHICKEN, ONIONS</td>
+                </tr>
+                <tr>
+                    <td class="nomecomida">PINNEAPLE 'O'CLOCK</td>
+                    <td rowspan="2"><span class="precos">R$16,00</span></td>
+                </tr>
+                <tr>
+                    <td class="descricaocomida">FRESH TOMATOES, MOZZARELLA, FRESH PINNEAPLE, BACON, FRESH BASIL</td>
+                </tr>
+                <tr>
+                    <td class="nomecomida">MEAT TOWN</td>
+                    <td rowspan="2"><span class="precos">R$20,00</span></td>
+                </tr>
+                <tr>
+                    <td class="descricaocomida">FRESH TOMATOES, MOZZARELLA, HOT PEPPERONI, HOT SAUSAGE, BEEF, CHICKEN</td>
+                </tr>
+                <tr>
+                    <td class="nomecomida">PARMA <span class="popular">NEW</span></td>
+                    <td rowspan="2"><span class="precos">R$21,00</span></td>
+                </tr>
+                <tr>
+                    <td class="descricaocomida">FRESH TOMATOES, MOZZARELLA, PARMA, BACON, FRESH ARUGULA</td>
+                </tr>
+            </table>
+        </div>
+        <div class="saladsMenu" id="saladsMenu">
+            <table class="tablemenu">
+                <tr>
+                    <td class="nomecomida">LASAGNA <span class="popular">POPULAR</span></td>
+                    <td rowspan="2"><span class="precos">R$13,50</span></td>
+                </tr>
+                <tr>
+                    <td class="descricaocomida">SPECIAL SAUCE, MOZZARELLA, PARMESAN, GROUND BEEF</td>
+                </tr>
+                <tr>
+                    <td class="nomecomida">RAVIOLI</td>
+                    <td rowspan="2"><span class="precos">R$14,50</span></td>
+                </tr>
+                <tr>
+                    <td class="descricaocomida">RAVIOLI FILLED WITH CHEESE</td>
+                </tr>
+                <tr>
+                    <td class="nomecomida">SPAGUETTI CLASSICA</td>
+                    <td rowspan="2"><span class="precos">R$11,00</span></td>
+                </tr>
+                <tr>
+                    <td class="descricaocomida">FRESH TOMATOES, ONIONS, GROUND BEEF</td>
+                </tr>
+                <tr>
+                    <td class="nomecomida">SEAFOOD PASTA</td>
+                    <td rowspan="2"><span class="precos">R$16,00</span></td>
+                </tr>
+                <tr>
+                    <td class="descricaocomida">SALMON, SHRIMP, LOBSTER, GARLIC</td>
+                </tr>
+            </table>
+        </div>
+        <div class="starterMenu" id="starterMenu">
+            <table class="tablemenu">
+                <tr>
+                    <td class="nomecomida">TODAY'S SOUP <span class="popular">SEASONAL</span></td>
+                    <td rowspan="2"><span class="precos">R$5,50</span></td>
+                </tr>
+                <tr>
+                    <td class="descricaocomida">ASK THE WAITER</td>
+                </tr>
+                <tr>
+                    <td class="nomecomida">BRUSCHETTA</td>
+                    <td rowspan="2"><span class="precos">R$8,50</span></td>
+                </tr>
+                <tr>
+                    <td class="descricaocomida">BREAD WITH PESTO, TOMATOES, ONION, GARLIC</td>
+                </tr>
+                <tr>
+                    <td class="nomecomida">GARLIC BREAD</td>
+                    <td rowspan="2"><span class="precos">R$9,50</span></td>
+                </tr>
+                <tr>
+                    <td class="descricaocomida">GRILLED CIABATTA, GARLIC BUTTER, ONIONS</td>
+                </tr>
+                <tr>
+                    <td class="nomecomida">TOMOZZARELA</td>
+                    <td rowspan="2"><span class="precos">R$10,50</span></td>
+                </tr>
+                <tr>
+                    <td class="descricaocomida">TOMATOES AND MOZZARELLA</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="aboutMenuBackground">
+        <div class="aboutMenuContent">
+            <div class="aboutMenuTitulo01"><h1>ABOUT</h1></div>
+            <div class="aboutMenuDesc01"><h2>THE PIZZA RESTAURANT WAS FOUNDED IN LOREM IPSUM DOLOR LOREM IPSUM DOLOR LOREM IPSUM DOLOR LOREM IPSUMDOLOR LOREM IPSUM IPSUMDOLOR LOREM IPSUM IPSUMDOLOR LOREM IPSUM IPSUMDOLOR LOREM IPSUM</h2></div>
+            <div class="aboutMenuDesc02">
+                <h2>THE CHEF? MR. ITALIANO HIMSELF</h2>
+                <h2>WE ARE PROUD OF OUR INTERIORS</h2>
+            </div>
+            <div class="aboutMenuGifDiv"><img class="aboutMenuGif" src="img\pusheen.gif"></div>          
+            <div class="aboutMenuImgDiv"><img class="aboutMenuImg" src="img\onepage_restaurant.jpg"></div> 
+            <div class="aboutMenuTitulo02"><h2>OPENING HOURS</h2></div>
+            <div class="aboutMenuDesc03">
+                <h2>MON & TUE CLOSED</h2>
+                <h2>WEDNESDAY 10.00 - 24.00</h2>
+                <h2>THURSDAY 10.00 - 24.00</h2>
+            </div>
+            <div class="aboutMenuDesc04">
+                <h2>FRIDAY 10.00 - 12.00</h2>
+                <h2>SATURDAY 10.00 - 23.00</h2>
+                <h2>SUNDAY CLOSED</h2>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js.js"></script>
+

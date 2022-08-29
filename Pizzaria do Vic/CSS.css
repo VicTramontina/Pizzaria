@@ -1,0 +1,323 @@
+html
+{
+    scroll-behavior: smooth;
+}
+.body
+{
+    margin: 0 auto;
+}
+
+.opening
+{
+    position: absolute;
+    bottom: 0%;
+    left: 2%;
+    border-radius: 0.2em;
+}
+.opening h1
+{
+    color: white;
+    font-size: 100%;
+    font-family: Amatic SC;
+    font-weight: 100;
+    background-color: black;
+    border-radius: 0.2em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+}
+.top-bar
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 0%;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1;
+}
+.top-bar a:hover
+{
+    color: red;
+    text-decoration: underline;
+}
+.top-barcontent
+{
+    font-family: Amatic SC;
+    font-size: 200%;
+    text-decoration: none;
+    color: white;
+}
+/*.pizzao
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    z-index: -9;
+}*/
+.titulo
+{
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin-top: 15%;
+    font-family: Amatic SC;
+    font-size: 300%;
+    line-height: 100%;
+}
+.titulo a
+{
+    font-size: 60%;
+    background-color: black;
+    color: white;
+    padding: 0.1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 0.2em;
+    text-decoration: none;
+}
+.titulo a:hover
+{
+    color:red;
+    text-decoration: underline;
+}
+.themenu h1
+{
+    margin: 0;
+    padding: 2%;
+    font-family: Amatic SC;
+    color:white;
+    font-size: 3em;
+    font-weight: 1em;
+}
+.gatoMenu
+{
+    border-radius: 50%;
+    height: 10em;
+}
+.menuselector
+{
+    margin: 0 auto;
+    position: relative;
+    display:  flex;
+    flex-direction: row;
+    width: 45%;
+    height:  3em;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0;
+}
+.menubotoes
+{
+    background-color: black;
+    font-family: Amatic SC;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    width: 33.33%;
+}
+.menubotoesPizza
+{
+    font-family: Amatic SC;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    width: 33.33%;
+    background-color: red;
+}
+.menubotoesPizza:hover
+{
+    background-color: red;
+    cursor: pointer;
+}
+.menubotoes:hover
+{
+    background-color: red;
+    cursor: pointer;
+}
+.saladsMenu
+{
+    display: none;
+    overflow-y: auto;
+    width: 45%;
+    height: 45%;
+    margin: 0 auto;
+}
+.pizzaMenu
+{
+    display: block;
+    overflow-y: auto;
+    width: 45%;
+    height: 45%;
+    margin: 0 auto;
+}
+.starterMenu
+{
+    display: none;
+    overflow-y: auto;
+    width: 45%;
+    height: 45%;
+    margin: 0 auto;
+}
+.tablemenu
+{
+    background-color: white;
+    margin: 0 auto;
+    border: solid 1px;
+    font-family: Amatic SC;
+    font-size: 1.5em;
+    width: 100%;
+}
+.precos
+{
+    background-color:  gray;
+    border-radius: 0.2em;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+    color: white;
+}
+.nomecomida
+{
+    text-align: left;
+    padding-left: 0.4em;
+    font-weight: bold;
+}
+.descricaocomida
+{
+    text-align: left;
+    padding-left: 0.4em;
+}
+.popular
+{
+    background-color: gray;
+    color: white;
+    font-weight: lighter;
+    border-radius: 0.2em;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+}
+.home
+{
+    position: static;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/header.jpg");
+}
+.themenu
+{
+    position: static;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    line-height: 300%;
+}
+.aboutMenuBackground
+{
+    display: block;
+    color: rgb(255, 255, 255);
+    font-family: Amatic SC;
+    position: static;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(139,95,91);
+}
+.aboutMenuContent
+{
+    justify-content: stretch;
+    display: grid;
+    grid-template-columns: [first] 50% [second] 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+    grid-template-rows: 5vh 10vh 10vh 10vh 38.2vh 10vh;
+}
+/* ------------>ABOUT MENU GRID ITEMS<--------------- */
+.aboutMenuTitulo01
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.aboutMenuDesc01
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+    grid-column-start: 1;
+    grid-column-end: 3; 
+}
+.aboutMenuDesc02
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.aboutMenuGifDiv
+{
+    display: flex;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.aboutMenuGif
+{
+    object-fit: cover;
+    border-radius: 50%; 
+    height: auto;
+    max-width: 65%; 
+}
+.aboutMenuImgDiv
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+}
+.aboutMenuImg
+{
+    height: 100%;
+    width: 100%;
+}
+.aboutMenuTitulo02
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+/* ------------>-------------<--------------- */
